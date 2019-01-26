@@ -9,8 +9,8 @@ const CustomRoutes = () => (
 
     <Router>
         <div>
-            <Link to='/'>HOME</Link>
-            <Link to='/Login'>LOGIN</Link>
+            {/* <Link to='/'>HOME</Link>
+            <Link to='/Login'>LOGIN</Link> */}
 
             <Route exact path='/' component={App} />
             <Route exact path='/Login' component={Login} />
