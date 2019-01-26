@@ -1,13 +1,17 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import {Router, Route } from 'react-router-dom';
+import createBrowserHistory from 'history/createBrowserHistory';
 import App from './App';
 import Login from './screens/Login/Login';
 import Signup from './screens/Signup/Signup';
 import Dashboard from './screens/Dashboard/Dashboard';
 
+
+const CustomHistory = createBrowserHistory();
+
 const CustomRoutes = () => (
 
-    <Router>
+    <Router history={CustomHistory}>
         <div>
             {/* <Link to='/'>HOME</Link>
             <Link to='/Login'>LOGIN</Link> */}

@@ -10,14 +10,17 @@ class App extends Component {
   constructor(){
      super();
      
+     this.state= {
+       isLogin: false,
+       isSignup: false,
+       isDashboard: false,
+       isApp: true,
+     }
   }
 
-  
 
 
   render() {
-
-    
 
     return (
 
