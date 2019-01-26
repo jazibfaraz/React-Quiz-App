@@ -5,6 +5,7 @@ import Dashboard from './screens/Dashboard/Dashboard';
 import Login from './screens/Login/Login';
 import Signup from './screens/Signup/Signup';
 
+
 class App extends Component {
   constructor(){
      super();
@@ -43,6 +44,8 @@ class App extends Component {
 
           </div>
         </div>
+
+        
       </div>
     );
   }

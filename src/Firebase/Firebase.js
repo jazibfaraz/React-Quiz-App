@@ -1,4 +1,4 @@
-
+import firebase from 'firebase';
 
 
   // Initialize Firebase
@@ -11,3 +11,5 @@
     messagingSenderId: "25099421537"
   };
   firebase.initializeApp(config);
+
+  export default firebase;

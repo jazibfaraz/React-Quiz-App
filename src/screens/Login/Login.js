@@ -11,7 +11,11 @@ class Login extends Component {
     return (
 
       <div className="App">
-        Login
+        <div>
+          <input type='email' placeholder='Email' required /><br />
+          <input type='password' placeholder='Password' required /><br />
+          <button type='button'>Login</button>
+        </div>
       </div>
     );
   }
