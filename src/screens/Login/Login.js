@@ -1,10 +1,37 @@
 import React, { Component } from 'react';
+import firebase from '../../Firebase/Firebase';
+import swal from 'sweetalert';
 
+const auth = firebase.auth();
 
 class Login extends Component {
-  
-  
+  constructor(){
+    super();
 
+    this.state = {
+
+      email: null,
+      pass: null,
+
+    }
+    this.loginAuth = this.loginAuth.bind(this);
+  }
+  
+  loginAuth()
+  {
+    const { email, pass } = this.state;
+    auth.signInWithEmailAndPassword(email, pass)
+    .then((success) => {
+      this.props.history.push('/Dashboard');
+    })
+    .catch((error) => {
+      swal({
+        title: 'Ooops!',
+        text: 'wrong email or password.',
+        icon: 'error',
+      });
+    })
+  }
 
   render() {
 
@@ -13,9 +40,9 @@ class Login extends Component {
 
       <div className="App">
         <div>
-          <input type='email' placeholder='Email' required /><br />
-          <input type='password' placeholder='Password' required /><br />
-          <button type='button'>Login</button>
+          <input type='email' placeholder='Email' onChange={e => this.setState({email: e.target.value})} required /><br />
+          <input type='password' placeholder='Password' onChange={e => this.setState({pass: e.target.value})} required /><br />
+          <button type='button' onClick={this.loginAuth}>Login</button>
         </div>
       </div>
     );

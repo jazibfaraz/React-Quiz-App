@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import firebase from '../../Firebase/Firebase'
+import swal from 'sweetalert';
 import App from '../../App';
 
 const db = firebase.database();
@@ -43,7 +44,12 @@ class Signup extends Component {
         // it is pushing the user info in the firebase db which we got when user signed up
         db.ref('UserInfo/'+currentUserUid+'/').push(userInfo);
         
-        
+        swal({
+
+          title: 'Congratulations!',
+          text: 'you have successfully created the account.',
+          icon: 'success'
+        })
         
         
         
@@ -52,7 +58,11 @@ class Signup extends Component {
         this.props.history.push('/Login')
       })
       .catch((error) => {
-        alert(error);
+        swal({
+          title: 'Ooops!',
+          text: 'email already existed',
+          icon: 'error',
+        });
       })
     
   }
