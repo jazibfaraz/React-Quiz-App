@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import firebase from '../../Firebase/Firebase'
 import swal from 'sweetalert';
-import App from '../../App';
+import Header1 from '../header1/header1';
 
 const db = firebase.database();
 const auth = firebase.auth();
@@ -72,7 +72,7 @@ class Signup extends Component {
     return (
 
       <div className="App">
-      <App /><br />
+      <Header1 /><br />
         <div>
           <input type='text' placeholder='First Name' onChange={e => this.setState({fName: e.target.value})} required /><br />
           <input type='text' placeholder='Last Name' onChange={e => this.setState({lName: e.target.value})} required /><br />

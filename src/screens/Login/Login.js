@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import firebase from '../../Firebase/Firebase';
 import swal from 'sweetalert';
+import Header1 from '../header1/header1'
 
 const auth = firebase.auth();
 
@@ -39,6 +40,9 @@ class Login extends Component {
     return (
 
       <div className="App">
+
+      <Header1 /><br />
+
         <div>
           <input type='email' placeholder='Email' onChange={e => this.setState({email: e.target.value})} required /><br />
           <input type='password' placeholder='Password' onChange={e => this.setState({pass: e.target.value})} required /><br />

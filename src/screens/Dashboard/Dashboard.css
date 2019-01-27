@@ -1,0 +1,66 @@
+.container
+{
+    border: 2px solid red;
+    min-height: 100%;
+    min-width: 100%;
+    
+}
+
+.grid
+{
+    /* border: 1px solid blue; */
+    height: 200px;
+    width: 45%;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.image-div
+{
+    
+    height: inherit;
+    border-radius: inherit;
+    
+    
+}
+
+#image-div1{
+    /* background: url('./comp-science.jpg'); */
+    background:linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,0.9)), url('./comp-science.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#image-div2{
+    /* background: url('./general-knowledge.jpg'); */
+    background:linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,0.9)), url('./general-knowledge.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#image-div3{
+    /* background: url('./history.jpg'); */
+    background-repeat: no-repeat;
+    background:linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,0.9)), url('./history.jpg');
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+
+#image-div4{
+    /* background: url('./sports.jpg'); */
+    background-repeat: no-repeat;
+    background:linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,0.9)), url('./sports.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.image-div-title
+{
+    bottom: 0;
+    color: #fff;
+    font-size: 1.3em;
+}

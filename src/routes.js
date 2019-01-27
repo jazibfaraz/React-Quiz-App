@@ -1,10 +1,11 @@
 import React from 'react';
-import {Router, Route } from 'react-router-dom';
+import { Router, Route } from 'react-router-dom';
 import createBrowserHistory from 'history/createBrowserHistory';
 import App from './App';
 import Login from './screens/Login/Login';
 import Signup from './screens/Signup/Signup';
 import Dashboard from './screens/Dashboard/Dashboard';
+
 
 
 const CustomHistory = createBrowserHistory();
@@ -18,8 +19,9 @@ const CustomRoutes = () => (
 
             <Route exact path='/' component={App} />
             <Route exact path='/Login' component={Login} />
-            <Route exact path='/Signup' component={Signup} />
-            <Route exact path='/Dashboard' component={Dashboard} />
+            <Route path='/Signup' component={Signup} />
+            <Route path='/Dashboard' component={Dashboard} />
+
         </div>
     </Router>
 )
