@@ -1,0 +1,28 @@
+body{
+    margin: 0 auto;
+    background-color: #dbdbdb;
+}
+
+.quiz-container
+{
+    border: 1px solid;
+    max-width: 80%;
+    min-height: 400px;
+    background-color: #fff;
+    margin: 0 auto;
+    border-radius: 12px;
+    margin-top: 70px;
+}
+
+
+.question-div
+{
+    border: 1px solid;
+    min-height: 120px;
+}
+
+.options-div
+{
+    border: 1px solid;
+    min-height: 200px;
+}

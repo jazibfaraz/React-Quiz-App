@@ -16,6 +16,10 @@ class App extends Component {
      }
   }
 
+  signup()
+  {
+    this.props.history.push('/Signup')
+  }
 
 
   render() {
@@ -26,8 +30,13 @@ class App extends Component {
       
       <Header1 />
       
+        <div className='get-started-div'>
+          
+        <button type='button' onClick={this.signup.bind(this)}>Get Started</button>
+
         
-         Home
+        </div>
+        <div className='title-div'>Welcome To The <br /> React Based  Quiz App</div> 
        
         
       </div>

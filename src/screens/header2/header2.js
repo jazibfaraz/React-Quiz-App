@@ -19,15 +19,15 @@ class Header2 extends Component {
 
                 <div className="header-menu">
 
-                <Router>
+                
                 
                     <div>
                     {/* <Link to="/">HOME</Link>
                     <Link to="/Login">LOGIN</Link> */}
-                    <Link to="/logout"><b>Logout</b></Link>
+                    <Link to="/Login"><b>Logout</b></Link>
                     </div>
                 
-                </Router>
+                
 
 
                 </div>
